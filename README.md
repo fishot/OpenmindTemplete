@@ -1,10 +1,12 @@
-OpenmindTemplete
-================
-其中_book是一本开智书，通过gitbook自动生成的，里面包含了样式表和网页。
+# OpenmindTemplete
 
-extra、lib是自带的模版库
+开智书库模板设计
 
-samples里面是自带的模版，打开就能看的版本
+## 目录
+
+- 其中_book是一本开智书，通过gitbook自动生成的，里面包含了样式表和网页。
+- extra、lib是自带的模版库
+- samples里面是自带的模版，打开就能看的版本
 
 # 目标
 
@@ -12,4 +14,4 @@ samples里面是自带的模版，打开就能看的版本
 
 # 当前问题
 
-sample中的样板读取的是目录下的图片，将图片作为书页呈现，而gitbook生成的是html格式，无法读取。
+sample中的样板读取的是目录下的图片，将图片作为书页呈现，而gitbook生成的是html格式，无法读取
