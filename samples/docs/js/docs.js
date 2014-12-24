@@ -10,7 +10,7 @@ function loadPage(page) {
 		container.find('.loader').remove();
 	});
 
-	img.attr('src', 'pages/' +  (page-2) + '.png');
+	img.attr('src', 'pages/' + ' ' + (page-2) + '.png');
 
 }
 
@@ -21,7 +21,7 @@ function addPage(page, book) {
 	var element = $('<div />', {});
 
 	if (book.turn('addPage', element, page)) {
-		if (page<28) {
+		if (page<76) {
 			element.html('<div class="gradient"></div><div class="loader"></div>');
 			loadPage(page);
 		}
@@ -30,7 +30,7 @@ function addPage(page, book) {
 
 function updateTabs() {
 	
-	var tabs = {7: 'Clases', 12:'Constructor', 14:'Properties', 16:'Methods', 23:'Events'},
+	var tabs = {6: 'test', 7:'test', 8:'test', 32:'test', 41:'test', 53:'test',74:'test'},
 		left = [],
 		right = [],
 		book = $('.sample-docs'),
@@ -57,7 +57,6 @@ function updateTabs() {
 	$('.sample-docs .tabs .right').html(right.join(''));
 
 }
-
 
 function numberOfViews(book) {
 	return book.turn('pages') / 2 + 1;
